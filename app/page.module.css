@@ -1,0 +1,31 @@
+.recipeGrid {
+  display: grid;
+  gap: 1rem;
+  margin: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  /*grid-template-columns: repeat(3, minmax(0, 1fr));*/
+  justify-items: center;
+  background: #EDEDED;
+}
+
+.gridFiltres {
+  margin: 2rem auto; /* Centre le bloc avec un espace en haut et en bas */
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem; /* Espace entre les boutons blancs et les tags jaunes */
+}
+.section {
+  margin-bottom: 2rem;
+
+}
+.footer {
+  background-color: #f7d36a;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-family: 'Manrope', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
