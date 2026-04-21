@@ -1,0 +1,53 @@
+.nfHeader{
+    height: 90vh;
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* ordre important : le dégradé d'abord, puis l'image */
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('/images/home.jpg'); 
+  background-size: cover;    
+  background-position: center; 
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  /*padding: 0 20px;*/
+}
+.errorImageContainer {
+  width: 100%;
+  max-width: 600px;
+ /* margin: 2rem auto 0;  Centré horizontalement avec un peu d'espace en haut et en bas */
+}
+.logo {
+  position: absolute;
+  top: 51px;
+  left: 69px;
+  max-width :207px;
+}
+.title {
+  font-family: 'Anton', sans-serif; 
+  color: #FFD15B; /* Le jaune doré du design */
+  font-size: 70px;/*2.5rem;*/
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 150%;
+  max-width:600px;
+  margin-bottom: 30px;
+  letter-spacing: 0%;
+}
+
+.subtitle {
+  font-family: 'Anton', sans-serif; 
+  color: white; /* Le jaune doré du design */
+  font-size: 40px;/*2.5rem;*/
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 150%;
+  max-width:600px;
+  margin-bottom: 30px;
+  letter-spacing: 0%;
+}
