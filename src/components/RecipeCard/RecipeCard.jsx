@@ -1,9 +1,10 @@
+//C'est page.tsx qui détient maintenant la logique de filtrage. Il calcule les recettes filtrées, puis les passe à RecipeCard pour qu'il les affiche. Si RecipeCard importait encore le JSON lui-même, il afficherait toujours les 50 recettes sans tenir compte des filtres.
+//C'est un principe React classique : les composants d'affichage ne gèrent pas les données, ils affichent ce qu'on leur donne
 import styles from './RecipeCard.module.css';
-import recipes from '../../data/recipes.json';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const RecipeCard = () => {
+const RecipeCard = ({ recipes }) => {
 
   return (
      <>

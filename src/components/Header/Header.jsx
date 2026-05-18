@@ -4,7 +4,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import Image from 'next/image';
 
 
-export default function Header() {
+export default function Header({ searchText, onSearchChange }) {
   return (
     <header className={styles.header}>
 
@@ -23,7 +23,7 @@ export default function Header() {
         {/*LES PETITS PLATS */}
         <img src="/logo/logo.png" alt="Logo Les Petits Plats" className={styles.logoImage} />
       </div>
-s
+
       <h1 className={styles.title}>
         Découvrez nos recettes du quotidien, simples et délicieuses
       </h1>
@@ -33,6 +33,8 @@ s
           type="text" 
           placeholder="Rechercher une recette, un ingrédient, ..." 
           className={styles.searchInput}
+          value={searchText}
+          onChange={(e) => onSearchChange(e.target.value)}
         />
         <button className={styles.searchButton}>
           <FontAwesomeIcon
