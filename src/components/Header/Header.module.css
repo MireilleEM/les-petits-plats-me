@@ -7,13 +7,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* ordre important : le dégradé d'abord, puis l'image */
- /* background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-    url('/images/home.jpg'); 
-  background-size: cover;    
-  background-position: center; 
-  background-repeat: no-repeat;*/
   color: white;
   text-align: center;
   padding: 0 20px;
@@ -90,10 +83,10 @@
 
 /* Le contenu qui va par-dessus (logo, titre, etc.) */
 .content {
-  position: relative; /* OBLIGATOIRE : Permet au texte de passer AU-DESSUS de l'image (z-index: -1) */
+  position: relative; /* Permet au texte de passer AU-DESSUS de l'image (z-index: -1) */
   z-index: 1; /* Le met au premier plan */
   
-  /* Ensuite tu centres ton contenu comme d'habitude */
+  /* Ensuite on centre le contenu  */
   height: 100%;
   display: flex;
   align-items: center;

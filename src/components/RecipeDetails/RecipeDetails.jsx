@@ -87,32 +87,6 @@ const RecipeDetails = ({ recipe }) => {
         </section>
 
 
-
-        {/* Bloc Recette en Étapes */}
-       {/*  <section className={styles.section}>
-          <h2 className={styles.sectionTitle}>RECETTE</h2>
-          
-          <ol className={styles.stepsList}>
-            <li>
-              <strong>Préparation des ingrédients :</strong>
-              <ul className={styles.subList}>
-                <li>Coupez le poulet en morceaux.</li>
-                <li>Épluchez et émincez l'oignon.</li>
-                <li>Lavez et coupez le poivron rouge en lanières.</li>
-              </ul>
-            </li>
-            
-            <li>
-              <strong>Cuisson du poulet :</strong>
-              <ul className={styles.subList}>
-                <li>Dans une grande cocotte, faites chauffer l'huile d'olive à feu moyen.</li>
-                <li>Ajoutez les morceaux de poulet et faites-les dorer de tous les côtés pendant environ 5-7 minutes.</li>
-              </ul>
-            </li>
-          </ol>
-          
-        </section>*/}
-
       </div>
     </article>
     

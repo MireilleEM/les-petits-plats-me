@@ -38,10 +38,10 @@ function TagDropdown({ label, tags, selectedTags, onTagSelect, onTagRemove, cate
           width="16" height="16" viewBox="0 0 24 24" fill="none"
           stroke="currentColor" strokeWidth="2"
         >
-          <polyline points="6 9 12 15 18 9" />
+          <polyline points="6 9 12 15 18 9" /> 
         </svg>
       </button>
-
+{/*polyline : un format pour dessiner des icônes directement en code, sans image*/} 
       {isOpen && (
         <div className={styles.dropdownPanel}>
           {/* Champ de recherche dans le dropdown */}
@@ -88,7 +88,7 @@ function TagDropdown({ label, tags, selectedTags, onTagSelect, onTagRemove, cate
 // ─── Composant principal TagFilter ────────────────────────────────────────────
 export default function TagFilter({ availableTags, selectedTags, onTagSelect, onTagRemove, recipeCount }) {
 
-  // Tous les tags sélectionnés (toutes catégories confondues) pour les chips
+  // Tous les tags sélectionnés (toutes catégories confondues) pour les pastilles
   const allSelected = [
     ...selectedTags.ingredients.map((t) => ({ tag: t, category: 'ingredients' })),
     ...selectedTags.appareils.map((t) => ({ tag: t, category: 'appareils' })),
@@ -125,13 +125,13 @@ export default function TagFilter({ availableTags, selectedTags, onTagSelect, on
           />
         </div>
 
-        {/* Compteur de recettes — même ligne que les dropdowns, aligné à droite */}
+        {/* Compteur de recettes même ligne que les dropdowns, aligné à droite */}
         <p className={styles.recipeCount}>
           {recipeCount} recette{recipeCount > 1 ? 's' : ''}
         </p>
       </div>
 
-      {/* Chips des tags sélectionnés */}
+      {/* "Chips" des tags sélectionnés */}
       {allSelected.length > 0 && (
         <div className={styles.selectedTags}>
           {allSelected.map(({ tag, category }) => (

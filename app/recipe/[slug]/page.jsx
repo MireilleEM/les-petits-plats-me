@@ -48,27 +48,4 @@ if (!choosedRecipe) {
 
 
 
-// Next.js nous donne automatiquement accès aux "params" de l'URL
-//export default function RecipeDetails({ params }) {
-  
-  // 1. On récupère le bout de l'URL (le slug ou l'id)
-  //const identifiant = params.slug;
-
-  // 2. On cherche dans le JSON la recette qui correspond
-  // (Adapte .slug par .id si ton JSON utilise des IDs dans l'URL)
-  //const recipeToShow = recipes.find((r) => r.slug === identifiant || r.id.toString() === identifiant);
-
-  // 3. Sécurité : si la recette n'existe pas
-  //if (!recipeToShow) {
-  //  return <h1 style={{ textAlign: 'center', marginTop: '50px' }}>Recette introuvable 😢</h1>;
-  /*}*/
-
-  // 4. Si on l'a trouvée, on affiche notre composant en lui passant les données !
-  //return (
-  //  <main>
-   //   <RecipeDetails recipe={recipeToShow} />
-   // </main>
- // );
-//}
-
 

@@ -1,5 +1,5 @@
 //C'est page.tsx qui détient maintenant la logique de filtrage. Il calcule les recettes filtrées, puis les passe à RecipeCard pour qu'il les affiche. Si RecipeCard importait encore le JSON lui-même, il afficherait toujours les 50 recettes sans tenir compte des filtres.
-//C'est un principe React classique : les composants d'affichage ne gèrent pas les données, ils affichent ce qu'on leur donne
+//C'est un principe React : les composants d'affichage ne gèrent pas les données, ils affichent ce qu'on leur donne
 import styles from './RecipeCard.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -50,7 +50,7 @@ const RecipeCard = ({ recipes }) => {
                 {/* On n'affiche la quantité que si elle existe */}
                 {item.quantity && (
                   //<span className={styles.ingredientQuantity}>{`${item.quantity} ${item.unit}`}</span>
-                  // On gère le cas où l'unité pourrait être absente (ex: "2 oeufs" sans "unit") :
+                  // gère le cas où l'unité pourrait être absente (ex: "2 oeufs" sans "unit") :
                   <span className={styles.ingredientQuantity}>{item.quantity} {item.unit}</span>
                 )}
               </div>
